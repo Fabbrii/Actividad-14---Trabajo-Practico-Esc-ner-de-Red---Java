@@ -1,0 +1,30 @@
+📝 Documento de Entrega Parcial – Escáner de Red
+
+Nombre del alumno: Fabrizio Bruno
+Curso: 5to 1ra
+Materia: Redes
+Escuela Técnica N°36
+Tecnología elegida: Java
+Fecha: 05/08/2025
+
+1. ¿Para qué sirve el programa?
+
+El programa desarrollado tiene como objetivo escanear una red local para detectar dispositivos conectados dentro de un rango de direcciones IP definido por el usuario. Esta herramienta permite identificar qué equipos están activos, si responden a comandos de red básicos como ping y obtener información adicional como el nombre del host.
+Este tipo de programa es útil para administradores de red, técnicos o cualquier persona que necesite conocer qué dispositivos están conectados a una red, ya sea para control, mantenimiento o seguridad.
+
+2. Diseño básico del sistema
+
+A continuación, se describe la estructura inicial del sistema (puede evolucionar):
+
+Clases principales del programa (borrador):
+
+- MainApp: Interfaz gráfica principal (ventana con campos IP, botones, tabla de resultados).
+- NetworkScanner: Clase que se encarga de realizar el escaneo, usando comandos como ping y nslookup.
+- Device: Clase que representa cada equipo detectado, con atributos como IP, nombre de host, estado, tiempo de respuesta.
+- ResultSaver: Clase encargada de guardar los resultados en archivos si el usuario lo desea.
+
+3. Tecnologías elegidas
+
+Lenguaje: Java
+Librerías previstas: java.net, java.io, java.swing, Runtime.getRuntime().exec() para ejecutar comandos del sistema como ping o nslookup.
+Motivo de elección: Java es un lenguaje robusto, multiplataforma y cuenta con herramientas integradas para trabajar con redes y crear interfaces gráficas de manera sencilla (usando Swing o JavaFX).
