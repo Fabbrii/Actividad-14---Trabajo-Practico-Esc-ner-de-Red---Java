@@ -1,0 +1,56 @@
+📝 Documento de Entrega Parcial – Escáner de Red
+Nombre del alumno: Fabrizio Bruno
+Curso: 5to 1ra
+Materia: Redes
+Escuela Técnica N°36
+Tecnología elegida: Java
+Fecha: 12/08/2025
+
+1. Descripción general del programa
+
+El programa desarrollado tiene como objetivo escanear una red local para detectar dispositivos conectados dentro de un rango de direcciones IP definido por el usuario.
+Esta herramienta permite identificar qué equipos están activos, comprobar si responden a comandos básicos como ping, obtener el nombre del host y recopilar información útil para diagnóstico y mantenimiento.
+El uso principal está orientado a administradores de red, técnicos en informática o personal de soporte que requiera conocer el estado de los dispositivos en una red local. También puede utilizarse como apoyo en tareas de seguridad informática y monitoreo.
+
+2. Objetivos
+
+  - Identificar todos los dispositivos activos dentro de un rango de IP determinado.
+  - Verificar conectividad mediante comandos de red (ping).
+  - Recopilar información básica como dirección IP, nombre del host y tiempo de respuesta.
+  - Organizar resultados en un formato legible y exportable para uso posterior.
+
+3. Alcance
+
+El sistema se desarrollará para funcionar en redes IPv4 locales, permitiendo al usuario definir manualmente el rango de direcciones a escanear.
+La aplicación contará con una interfaz gráfica sencilla para facilitar su uso, y se planea que sea multiplataforma, ejecutándose en sistemas operativos como Windows y Linux.
+
+4. Diseño básico del sistema
+
+Clases principales previstas:
+  - MainApp: Interfaz gráfica principal (ventana con campos de IP, botones de control y tabla de resultados).
+  - NetworkScanner: Encargada de realizar el escaneo de direcciones IP y obtener información con comandos como ping y nslookup.
+  - Device: Representa cada equipo detectado, con atributos como IP, nombre del host, estado y tiempo de respuesta.
+  - ResultSaver: Guarda los resultados del escaneo en archivos de texto o CSV, según elección del usuario.
+
+5. Tecnologías elegidas
+
+  - Lenguaje: Java
+  - Librerías: java.net, java.io, javax.swing y Runtime.getRuntime().exec() para ejecutar comandos del sistema.
+
+Motivo de elección: Java ofrece un entorno estable, multiplataforma y con bibliotecas integradas para trabajar con redes y crear interfaces gráficas fácilmente.
+
+6. Funcionalidades previstas
+
+  - Definir rango de IP a escanear.
+  - Ejecutar escaneo y mostrar resultados en tiempo real.
+  - Filtrar resultados (solo dispositivos activos).
+  - Exportar resultados a archivo de texto o CSV.
+  - Mostrar nombre de host y tiempo de respuesta por dispositivo.
+
+7. Posibles mejoras futuras
+
+  - Compatibilidad con IPv6.
+  - Escaneo de puertos abiertos.
+  - Integración con bases de datos para histórico de escaneos.
+  - Notificaciones automáticas si un dispositivo deja de estar activo.
+  - Versión portable sin instalación.
